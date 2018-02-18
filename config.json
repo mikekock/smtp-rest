@@ -1,0 +1,6 @@
+{
+    "urlPrefix": "/email.api",
+    "transporterOptions": {
+        "host": "localhost"
+    }
+}
