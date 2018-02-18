@@ -20,10 +20,6 @@ sendEmail = function(transporterOptions, mailOptions, result) {
     });
 }
 
-sendResponse = function(res, result) {
-    res.json(result);
-}
-
 handleSendEmail = function(req, res) {
     let transporterOptions = config.transporterOptions;
     if (transporterOptions in req.body) {
@@ -31,7 +27,7 @@ handleSendEmail = function(req, res) {
     }
     
     let sendResult = function(result) {
-        sendResponse(res, result);
+        res.json(result);
     }
     sendEmail(transporterOptions, req.body.mailOptions, sendResult);
 }
