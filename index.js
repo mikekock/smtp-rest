@@ -11,12 +11,7 @@ sendEmail = function(transporterOptions, mailOptions, result) {
 
      // send mail with defined transport object
     transporter.sendMail(mailOptions, (error, info) => {
-        if (error) {
-            result(error);
-        }
-        else {
-            result(info);
-        }
+        result({error, info});
     });
 }
 
