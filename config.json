@@ -1,6 +1,9 @@
 {
     "urlPrefix": "/email.api",
     "transporterOptions": {
-        "host": "localhost"
+        "host": "localhost",
+        "port": 4000,
+        "secure": false,
+        "ignoreTLS": true
     }
 }

@@ -24,6 +24,7 @@ handleSendEmail = function(req, res) {
     let sendResult = function(result) {
         res.json(result);
     }
+
     sendEmail(transporterOptions, req.body.mailOptions, sendResult);
 }
 app.use(bodyParser.json()); // for parsing application/json

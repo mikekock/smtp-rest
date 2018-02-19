@@ -11,5 +11,8 @@
   "dependencies": {
     "express": "^4.16.2",
     "nodemailer": "^4.4.2"
+  },
+  "devDependencies": {
+    "smtp-server": "^3.4.1"
   }
 }
