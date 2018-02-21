@@ -5,7 +5,7 @@ var bodyParser = require('body-parser');
 const config = require('./config.json');
 const nodemailer = require('nodemailer');
 
-sendEmail = function(transporterOptions, mailOptions, result) {
+function sendEmail(transporterOptions, mailOptions, result) {
      // create reusable transporter object using the default SMTP transport
      let transporter = nodemailer.createTransport(transporterOptions);
 
@@ -15,7 +15,7 @@ sendEmail = function(transporterOptions, mailOptions, result) {
     });
 }
 
-handleSendEmail = function(req, res) {
+function handleSendEmail(req, res) {
     let transporterOptions = config.transporterOptions;
     if (transporterOptions in req.body) {
         transporterOptions = req.body.transporterOptions;
