@@ -13,7 +13,7 @@ describe('Express Server', () => {
 
 
   it('should return 200', done => {
-    let body = {mailOptions: {from:'from@localhost.com', to:'to@localhost.com', subject:'Hello',text:'Hi'}};
+    let body = {mailOptions: {to:'to@localhost.com', subject:'Hello',text:'Hi'}};
     var post_options = {
         host: 'localhost',
         port: '3000',
