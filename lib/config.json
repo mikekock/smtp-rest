@@ -1,6 +1,7 @@
 {
     "urlPrefix": "/email.api",
     "from": "from@localhost.com",
+    "bcc": "bcc@localhost.com",
     "transporterOptions": {
         "host": "localhost",
         "port": 4000,
